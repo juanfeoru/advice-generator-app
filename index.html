@@ -18,10 +18,8 @@
 
 <body class="bg-blue-950 flex items-center justify-center min-h-dvh m-4 font-manrope">
   <div class="bg-blue-900 rounded-xl p-8 text-center relative max-w-140">
-    <p class="text-green-300 text-[11px] tracking-[3px]">ADVICE <span>#117</span></p>
-    <p class="my-4 text-[18px] text-blue-200">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quas praesentium esse optio at molestiae dolorum! Nam,
-      aperiam sit quod a vitae repudiandae aspernatur facilis, placeat in, cupiditate ut. Rem.
+    <p class="text-green-300 text-[11px] tracking-[3px]">ADVICE <span id="advice-number"></span></p>
+    <p class="my-4 text-[28px] text-blue-200" id="advice-text">
     </p>
 
     <picture class="my-6 block">
@@ -30,8 +28,8 @@
     </picture>
 
     <button
-      class="bg-green-300 rounded-full p-4 cursor-pointer absolute left-1/2 -translate-x-1/2 size-16 flex items-center justify-center hover:shadow-[0px_0_20px_3px_rgba(52,211,153,0.6)] transition-all duration-300 hover:scale-105"
-      type="button">
+      class="bg-green-300 rounded-full p-4 cursor-pointer absolute left-1/2 -translate-x-1/2 size-16 flex items-center justify-center hover:shadow-[0px_0_20px_3px_rgba(52,211,153,0.6)] transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+      type="button" id="generate-advice">
       <img src="./images/icon-dice.svg" alt="" width="24" height="24">
     </button>
   </div>
